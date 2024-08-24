@@ -1,0 +1,14 @@
+BoxLayout:
+    orientation: "vertical"
+    Camera:
+        id: camera
+        play: True
+        on_texture: app.stream_live_camera()
+    Label:
+        status: ""
+        text: "status: " + self.status
+        size_hint_y: .15
+#    Button:
+#        size_hint_y: .2
+#        text: "Take a pic"
+#        on_release: app.take_picture(camera)
